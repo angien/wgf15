@@ -1,0 +1,154 @@
+
+#one {
+    width: 120%; 
+    height: 100%;
+    
+    background-image:url("/images/mario/mario_1.png");
+    position: absolute;
+    background-size:contain;
+    
+
+     /* Chrome, Safari, Opera */
+    -webkit-animation-name: myfirst;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+
+    /* Standard syntax */
+    animation-name: myfirst;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+#two {
+    width: 120%; 
+    height: 100%;
+    
+    background-image:url("/images/mario/mario_2.png");
+    position: absolute;
+    background-size:contain;
+
+    
+
+     /* Chrome, Safari, Opera */
+    -webkit-animation-name: myfirst;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+
+    /* Standard syntax */
+    animation-name: myfirst;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+#three {
+    width: 100%; 
+    height: 100%;
+    
+    background-image:url("/images/mario/mario_3.png");
+    position: absolute;
+    background-size:contain;
+
+    
+
+     /* Chrome, Safari, Opera */
+    -webkit-animation-name: myfirst;
+    -webkit-animation-duration: 9s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+
+    /* Standard syntax */
+    animation-name: myfirst;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+#four {
+    width: 100%; 
+    height: 100%;
+    
+    background-image:url("/images/mario/mario_4.png");
+    position: absolute;
+    background-size:contain;
+    
+
+     /* Chrome, Safari, Opera */
+    -webkit-animation-name: myfirst;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+
+    /* Standard syntax */
+    animation-name: myfirst;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+#five {
+    width: 100%; 
+    height: 100%;
+    
+    background-image:url("/images/mario/mario_5.png");
+    position: absolute;
+    background-size:contain;
+    
+
+     /* Chrome, Safari, Opera */
+    -webkit-animation-name: myfirst;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+
+    /* Standard syntax */
+    animation-name: myfirst;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   {left:-100px; top:0px;}
+    50%  {left:0px; top:0px;}
+    100% {left:-100px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    0%   {background:red; left:-100px; top:0px;}
+    50%  {background:blue; left:0px; top:0px;}
+    100% {background:red; left:-100px; top:0px;}
+}
+
