@@ -9,10 +9,6 @@ body {
   background-repeat: repeat;*/
 }
 
-p, h1{
-  font-family:NexaLight;
-}
-
 @font-face {
 font-family: NexaLight;
 src: url("../fonts/NexaLight.otf") format("opentype");
@@ -22,6 +18,14 @@ src: url("../fonts/NexaLight.otf") format("opentype");
 font-family: NexaBold;
 font-weight: bold;
 src: url("../fonts/NexaBold.otf") format("opentype");
+}
+
+p {
+  font-family:NexaLight;
+}
+
+h1 {
+  font-family:NexaLight;
 }
 
 /* CUSTOMIZE THE NAVBAR
