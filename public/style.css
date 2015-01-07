@@ -64,7 +64,7 @@ body {
 
 /* Carousel base class */
 .carousel {
-  height: 400px;
+  height: 225px;
   margin-bottom: 60px;
 }
 /* Since positioning the image, we need to help out the caption */
@@ -74,8 +74,13 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 400px;
+  height: 225px;
   background-color: #777;
+}
+
+.shake > img {
+  width: 200px;
+  height: 100%;
 }
 
 
@@ -124,7 +129,7 @@ body {
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
-
+/* medium windows */
 @media (min-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper {
@@ -139,7 +144,6 @@ body {
     padding-left: 0;
   }
 
-  /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
     /*border-radius: 4px;*/
     border: none;
@@ -156,19 +160,25 @@ body {
     font-size: 50px;
   }
 
+  .shake > img {
+  height: 200px;
+  width: auto;
+}
+
   /* Carousel base class */
   .carousel {
-    height: 500px;
+    height: 350px;
     margin-bottom: 60px;
   }
   /* Declare heights because of positioning of img element */
   .carousel .item {
-    height: 500px;
+    height: 350px;
     background-color: #777;
     overflow: hidden;
   }
 }
 
+/* largest windows */
 @media (min-width: 992px) {
   /* Carousel base class */
   .carousel {
@@ -180,6 +190,11 @@ body {
     height: 500px;
     background-color: #777;
   }
+.shake > img {
+  height: 200px;
+  width: auto;
+}
+
   .featurette-heading {
     margin-top: 120px;
   }
