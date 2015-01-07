@@ -28,6 +28,11 @@ h1 {
   font-family:NexaLight;
 }
 
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
+
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -64,7 +69,6 @@ h1 {
 .navbar-nav > li:hover {
     background-color: #000;
 
-    /*box-shadow: 0 -10px gold inset;*/
 
     -o-transition:.5s;
     -ms-transition:.5s;
@@ -75,6 +79,7 @@ h1 {
 
   .navbar-nav > li > a {
     line-height: 28px;
+    font-family:NexaLight;
   }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -213,7 +218,5 @@ h1 {
   width: auto;
 }
 
-  .featurette-heading {
-    margin-top: 120px;
-  }
+ 
 }
