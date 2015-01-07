@@ -9,6 +9,20 @@ body {
   background-repeat: repeat;*/
 }
 
+p, h1{
+  font-family:NexaLight;
+}
+
+@font-face {
+font-family: NexaLight;
+src: url("../fonts/NexaLight.otf") format("opentype");
+}
+
+@font-face {
+font-family: NexaBold;
+font-weight: bold;
+src: url("../fonts/NexaBold.otf") format("opentype");
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -161,7 +175,7 @@ body {
   }
 
   .hover > img {
-  height: 200px;
+  height: 150px;
   width: auto;
 }
 
