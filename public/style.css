@@ -33,6 +33,10 @@ h1 {
   font-family:NexaLight;
 }
 
+.log-title {
+  font-family: NexaBold;
+}
+
 .panel-title {
   font-family:NexaLight;
 }
@@ -58,6 +62,10 @@ margin: 20px auto;
 }
 
 .col-xs-3 > a > img {
+    max-width:100%;
+}
+
+.map > img {
     max-width:100%;
 }
 
