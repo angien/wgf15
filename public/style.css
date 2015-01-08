@@ -16,13 +16,13 @@ body {
 
 @font-face {
 font-family: NexaLight;
-src: url("../fonts/NexaLight.otf") format("opentype");
+src: url("fonts/NexaLight.otf") format("opentype");
 }
 
 @font-face {
 font-family: NexaBold;
 font-weight: bold;
-src: url("../fonts/NexaBold.otf") format("opentype");
+src: url("fonts/NexaBold.otf") format("opentype");
 }
 
 p {
