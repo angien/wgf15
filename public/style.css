@@ -7,6 +7,11 @@ body {
   background-color: #fff;
   /*background-image: url("/images/mario/mario_6.png");
   background-repeat: repeat;*/
+
+}
+
+.margin {
+    margin-left:5%; margin-right:5%
 }
 
 @font-face {
@@ -32,6 +37,25 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;    
 }
 
+.hover > img {
+  width: 200px;
+  height: 100%;
+}
+
+
+.half-rule {
+width: 100px;
+margin: 40px auto;
+}
+
+.no-rule {
+width: 0px;
+margin: 20px auto;
+}
+
+.col-xs-3 > a > img {
+    max-width:100%;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -87,7 +111,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 /* Carousel base class */
 .carousel {
-  height: 200px;
+  height: 300px;
   margin-bottom: 60px;
 }
 /* Since positioning the image, we need to help out the caption */
@@ -97,21 +121,16 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 200px;
+  height: 300px;
   background-color: #777;
 }
-
-.hover > img {
-  width: 200px;
-  height: 100%;
-}
-
 
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
+  min-height: 100%;
+  min-width: 768px;
   /*height: 500px;
   max-width:none;*/
 }
@@ -122,14 +141,14 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
+.marketing .col-md-4 {
   margin-bottom: 20px;
   text-align: center;
 }
 .marketing h2 {
   font-weight: normal;
 }
-.marketing .col-lg-4 p {
+.marketing .col-md-4 p {
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -155,6 +174,12 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
+}
+
+.featurette-small-heading {
+margin-bottom: 5px;
+font-size: 30px;
+font-weight: 400;
 }
 
 /* RESPONSIVE CSS
@@ -190,6 +215,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     font-size: 50px;
   }
 
+  .featurette-small-heading {
+    font-size: 30px;
+  }
+
   .hover > img {
     height: 150px;
     width: auto;
@@ -197,12 +226,12 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
   /* Carousel base class */
   .carousel {
-    height: 370px;
+    height: 400px;
     margin-bottom: 60px;
   }
   /* Declare heights because of positioning of img element */
   .carousel .item {
-    height: 370px;
+    height: 400px;
     background-color: #777;
     overflow: hidden;
   }
@@ -212,12 +241,12 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 @media (min-width: 992px) {
   /* Carousel base class */
   .carousel {
-    height: 500px;
+    height: 550px;
     margin-bottom: 60px;
   }
   /* Declare heights because of positioning of img element */
   .carousel .item {
-    height: 500px;
+    height: 550px;
     background-color: #777;
   }
   .hover > img {
@@ -231,31 +260,6 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 /* CSS3 EFFECTS
 -------------------- */
-
-@-webkit-keyframes spaceboots {
-    0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
-    10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
-    30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
-    40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
-    50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
-    70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
-    80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
-    90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
-    100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
-}
-.shake:hover,
-.shake:focus {
-    -webkit-animation-name: spaceboots;
-    -webkit-animation-duration: 0.8s;
-    -webkit-transform-origin:50% 50%;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-}
-.shake {
-    display:inline-block
-}
 
 /* Hover */
 @-webkit-keyframes hover {
@@ -309,6 +313,153 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   animation-direction: alternate;
 }
 
+/* Buzz Out */
+@-webkit-keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+
+@keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+
+.hvr-buzz-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-buzz-out:hover, .hvr-buzz-out:focus, .hvr-buzz-out:active {
+  -webkit-animation-name: hvr-buzz-out;
+  animation-name: hvr-buzz-out;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Clouds */
 
 #clouds{
     padding: 100px 0;
