@@ -57,6 +57,29 @@ margin: 20px auto;
     max-width:100%;
 }
 
+.navbar{
+  box-shadow: 0px 4px 20px;
+}
+
+.shadow img {
+  box-shadow: 0px 4px 20px;
+}
+
+.test {
+  background-image: url("images/wgf.jpg");
+  background-repeat: no-repeat;
+    margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.test-inner {
+    padding-top: 80px;
+  padding-bottom: 80px;
+  color: #fff;
+
+}
+
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -84,6 +107,7 @@ margin: 20px auto;
 
 .navbar-nav {
   font-size: 16px;
+
 }
 
 .navbar-header > a {
@@ -161,6 +185,8 @@ margin: 20px auto;
   margin-right: 10px;
   margin-left: 10px;
 }
+
+
 
 /* Featurettes
 ------------------------- */
