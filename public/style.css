@@ -33,6 +33,10 @@ h1 {
   font-family:NexaLight;
 }
 
+.panel-title {
+  font-family:NexaLight;
+}
+
 ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;    
 }
