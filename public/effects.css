@@ -1,0 +1,507 @@
+/* CSS3 EFFECTS
+-------------------- */
+
+/* Hover */
+@-webkit-keyframes hover {
+  50% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes hover {
+  50% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+
+.hover {
+  display: inline-block;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hover {
+  -webkit-transform: translateY(-6px);
+  transform: translateY(-6px);
+  -webkit-animation-name: hover;
+  animation-name: hover;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+/* Buzz Out */
+@-webkit-keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+
+@keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+
+.hvr-buzz-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-buzz-out:hover, .hvr-buzz-out:focus, .hvr-buzz-out:active {
+  -webkit-animation-name: hvr-buzz-out;
+  animation-name: hvr-buzz-out;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Clouds */
+
+#clouds{
+    padding: 100px 0;
+  /*  background: #c9dbe9;
+    background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+    background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+    background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);*/
+}
+
+/*Time to finalise the cloud shape*/
+.cloud {
+    width: 200px; height: 60px;
+    background: #fff;
+    
+    border-radius: 200px;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+    
+    position: relative; 
+}
+
+.cloud:before, .cloud:after {
+    content: '';
+    position: absolute; 
+    background: #fff;
+    width: 100px; height: 80px;
+    position: absolute; top: -15px; left: 10px;
+    
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+    width: 120px; height: 120px;
+    top: -55px; left: auto; right: 15px;
+}
+
+/*Time to animate*/
+.x1 {
+  top: 10px;
+    -webkit-animation: moveclouds 15s linear infinite;
+    -moz-animation: moveclouds 15s linear infinite;
+    -o-animation: moveclouds 15s linear infinite;
+}
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+    left: 200px; top: 10px;
+    
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0.6; /*opacity proportional to the size*/
+    
+    /*Speed will also be proportional to the size and opacity*/
+    /*More the speed. Less the time in 's' = seconds*/
+    -webkit-animation: moveclouds 25s linear infinite;
+    -moz-animation: moveclouds 25s linear infinite;
+    -o-animation: moveclouds 25s linear infinite;
+}
+
+.x3 {
+    left: -250px; top: 10px;
+    
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.8; /*opacity proportional to the size*/
+    
+    -webkit-animation: moveclouds 20s linear infinite;
+    -moz-animation: moveclouds 20s linear infinite;
+    -o-animation: moveclouds 20s linear infinite;
+}
+
+.x4 {
+    left: 470px; top: 50px;
+    
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0.75; /*opacity proportional to the size*/
+    
+    -webkit-animation: moveclouds 18s linear infinite;
+    -moz-animation: moveclouds 18s linear infinite;
+    -o-animation: moveclouds 18s linear infinite;
+}
+
+.x5 {
+    left: -150px; top: 50px;
+    
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.8; /*opacity proportional to the size*/
+    
+    -webkit-animation: moveclouds 20s linear infinite;
+    -moz-animation: moveclouds 20s linear infinite;
+    -o-animation: moveclouds 20s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+    0% {margin-left: 1000px;}
+    100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+    0% {margin-left: 1000px;}
+    100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+    0% {margin-left: 1000px;}
+    100% {margin-left: -1000px;}
+}
+
+/* FAIRY STUFF */
+
+@-webkit-keyframes webkitFairyHey {
+  0%
+  {
+    -webkit-opacity: 1;
+  }
+  13%
+  {
+    -webkit-opacity: 0;
+  }
+  50%
+  {
+    -webkit-opacity: 1;
+  }
+  57%
+  {
+    -webkit-opacity: 0;
+  }
+  88%
+  {
+    -webkit-opacity: 0;
+  }
+  100%
+  {
+    -webkit-opacity: 1;
+  }
+}
+@keyframes fairyHey {
+  0%
+  {
+    opacity: 1;
+  }
+  13%
+  {
+    opacity: 0;
+  }
+  50%
+  {
+    opacity: 1;
+  }
+  57%
+  {
+    opacity: 0;
+  }
+  88%
+  {
+    opacity: 0;
+  }
+  100%
+  {
+    opacity: 1;
+  }
+}
+
+.fairyHey
+{
+  animation: fairyHey;
+  -webkit-animation: webkitFairyHey;
+
+  animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+
+  animation-timing-function: steps(1);
+  -webkit-animation-timing-function: steps(1);
+}
+
+.fairyMovement
+{
+
+    position: relative;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: webkitFairyMovement;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    /* Standard syntax */
+    animation-name: fairyMovement;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes webkitFairyMovement {
+    0%   {left:0px; top:0px}
+    13%   {left:25%; top:50%}
+    50%   {left:70%; top:25%}
+    57%   {left:5%; top:50%}
+    88%   {left:70%; top:20%}
+    100%   {left:0px; top:0px}
+}
+
+/* Standard syntax */
+@keyframes fairyMovement {
+    0%   {left:0px; top:0px}
+    13%   {left:25%; top:50%}
+    50%   {left:50%; top:25%}
+    57%   {left:5%; top:70%}
+    88%   {left:50%; top:20%}
+    100%   {left:0px; top:0px}
+}
+
+@-webkit-keyframes flutterL {
+  0%   { -webkit-transform: rotate(0deg); }
+  50%  { -webkit-transform: rotate(-30deg); }
+  100% { -webkit-transform: rotate(0deg); }
+}
+@-moz-keyframes flutterL {
+0%   { -moz-transform: rotate(0deg); }
+50%  { -moz-transform: rotate(-30deg); }
+100% { -moz-transform: rotate(0deg); }
+}
+@-o-keyframes flutterL {
+  0%   { -o-transform: rotate(0deg); }
+  50%  { -o-transform: rotate(-30deg); }
+  100% { -o-transform: rotate(0deg); }
+}
+@keyframes flutterL {
+  0%   { transform: rotate(0deg); }
+  50%  { transform: rotate(-30deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.flutterL
+{
+  animation: flutterL;
+  -moz-animation: flutterL;
+  -webkit-animation: flutterL;
+  -o-animation: flutterL;
+
+  animation-duration: 100ms;
+  -moz-animation-duration: 100ms;
+  -webkit-animation-duration: 100ms;
+  -o-animation-duration: 100ms;
+
+  animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes flutterR {
+  0%   { -webkit-transform: rotate(0deg); }
+  50%  { -webkit-transform: rotate(30deg); }
+  100% { -webkit-transform: rotate(0deg); }
+}
+@-moz-keyframes flutterR {
+0%   { -moz-transform: rotate(0deg); }
+50%  { -moz-transform: rotate(30deg); }
+100% { -moz-transform: rotate(0deg); }
+}
+@-o-keyframes flutterR {
+  0%   { -o-transform: rotate(0deg); }
+  50%  { -o-transform: rotate(30deg); }
+  100% { -o-transform: rotate(0deg); }
+}
+@keyframes flutterR {
+  0%   { transform: rotate(0deg); }
+  50%  { transform: rotate(30deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.flutterR
+{
+  animation: flutterR;
+  -moz-animation: flutterR;
+  -webkit-animation: flutterR;
+  -o-animation: flutterR;
+
+  animation-duration: 100ms;
+  -moz-animation-duration: 100ms;
+  -webkit-animation-duration: 100ms;
+  -o-animation-duration: 100ms;
+
+  animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+}
