@@ -1,0 +1,213 @@
+@-webkit-keyframes webkitFairyHey {
+  0%
+  {
+    -webkit-opacity: 0;
+  }
+  13%
+  {
+    -webkit-opacity: 1;
+  }
+  50%
+  {
+    -webkit-opacity: 0;
+  }
+  57%
+  {
+    -webkit-opacity: 1;
+  }
+  88%
+  {
+    -webkit-opacity: 0;
+  }
+  100%
+  {
+    -webkit-opacity: 1;
+  }
+}
+@keyframes fairyHey {
+  0%
+  {
+    opacity: 0;
+  }
+  13%
+  {
+    opacity: 1;
+  }
+  50%
+  {
+    opacity: 0;
+  }
+  57%
+  {
+    opacity: 1;
+  }
+  88%
+  {
+    opacity: 0;
+  }
+  100%
+  {
+    opacity: 1;
+  }
+}
+
+.fairyHey
+{
+  animation: fairyHey;
+  -webkit-animation: webkitFairyHey;
+
+  animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+
+  animation-timing-function: steps(1);
+  -webkit-animation-timing-function: steps(1);
+}
+
+@-webkit-keyframes webkitFairyMovement {
+  0%
+  {
+    -webkit-transform: translate(0px, 0px);
+  }
+  13%
+  {
+    -webkit-transform: translate(75px, 100px);
+  }
+  50%
+  {
+    -webkit-transform: translate(250px, 50px);
+  }
+  57%
+  {
+    -webkit-transform: translate(10px, 200px);
+  }
+  88%
+  {
+    -webkit-transform: translate(300px, 30px);
+  }
+  100%
+  {
+    -webkit-transform: translate(0px, 0px);
+  }
+}
+@keyframes fairyMovement {
+  0%
+  {
+    transform: translate(0px, 0px);
+  }
+  13%
+  {
+    transform: translate(75px, 100px);
+  }
+  50%
+  {
+    transform: translate(250px, 50px);
+  }
+  57%
+  {
+    transform: translate(10px, 200px);
+  }
+  88%
+  {
+    transform: translate(300px, 30px);
+  }
+  100%
+  {
+    transform: translate(0px, 0px);
+  }
+}
+
+.fairyMovement
+{
+  animation: fairyMovement;
+  -webkit-animation: webkitFairyMovement;
+
+  animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+
+  animation-timing-function: cubic-bezier(0,0,0,1);
+  -webkit-animation-timing-function: cubic-bezier(0,0,0,1);
+}
+
+@-webkit-keyframes flutterL {
+  0%   { -webkit-transform: rotate(0deg); }
+  50%  { -webkit-transform: rotate(-30deg); }
+  100% { -webkit-transform: rotate(0deg); }
+}
+@-moz-keyframes flutterL {
+0%   { -moz-transform: rotate(0deg); }
+50%  { -moz-transform: rotate(-30deg); }
+100% { -moz-transform: rotate(0deg); }
+}
+@-o-keyframes flutterL {
+  0%   { -o-transform: rotate(0deg); }
+  50%  { -o-transform: rotate(-30deg); }
+  100% { -o-transform: rotate(0deg); }
+}
+@keyframes flutterL {
+  0%   { transform: rotate(0deg); }
+  50%  { transform: rotate(-30deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.flutterL
+{
+  animation: flutterL;
+  -moz-animation: flutterL;
+  -webkit-animation: flutterL;
+  -o-animation: flutterL;
+
+  animation-duration: 100ms;
+  -moz-animation-duration: 100ms;
+  -webkit-animation-duration: 100ms;
+  -o-animation-duration: 100ms;
+
+  animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes flutterR {
+  0%   { -webkit-transform: rotate(0deg); }
+  50%  { -webkit-transform: rotate(30deg); }
+  100% { -webkit-transform: rotate(0deg); }
+}
+@-moz-keyframes flutterR {
+0%   { -moz-transform: rotate(0deg); }
+50%  { -moz-transform: rotate(30deg); }
+100% { -moz-transform: rotate(0deg); }
+}
+@-o-keyframes flutterR {
+  0%   { -o-transform: rotate(0deg); }
+  50%  { -o-transform: rotate(30deg); }
+  100% { -o-transform: rotate(0deg); }
+}
+@keyframes flutterR {
+  0%   { transform: rotate(0deg); }
+  50%  { transform: rotate(30deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.flutterR
+{
+  animation: flutterR;
+  -moz-animation: flutterR;
+  -webkit-animation: flutterR;
+  -o-animation: flutterR;
+
+  animation-duration: 100ms;
+  -moz-animation-duration: 100ms;
+  -webkit-animation-duration: 100ms;
+  -o-animation-duration: 100ms;
+
+  animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+}

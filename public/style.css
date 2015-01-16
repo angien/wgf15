@@ -48,7 +48,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 
 .hover > img {
-  width: 200px;
+  width: 220px;
   height: 100%;
 }
   .entireimg
@@ -232,6 +232,11 @@ margin: 20px auto;
   margin-bottom: 20px;
 }
 
+.col-xs-6 img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
 .col-xs-3 > a > img {
     max-width:100%;
 }
@@ -350,7 +355,7 @@ font-weight: 400;
     background-color: #777;
   }
   .hover > img {
-    height: 200px;
+    height: 220px;
     width: auto;
   }
 

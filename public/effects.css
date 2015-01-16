@@ -323,19 +323,19 @@
 @-webkit-keyframes webkitFairyHey {
   0%
   {
-    -webkit-opacity: 1;
+    -webkit-opacity: 0;
   }
   13%
   {
-    -webkit-opacity: 0;
+    -webkit-opacity: 1;
   }
   50%
   {
-    -webkit-opacity: 1;
+    -webkit-opacity: 0;
   }
   57%
   {
-    -webkit-opacity: 0;
+    -webkit-opacity: 1;
   }
   88%
   {
@@ -343,25 +343,25 @@
   }
   100%
   {
-    -webkit-opacity: 1;
+    -webkit-opacity: 0;
   }
 }
 @keyframes fairyHey {
   0%
   {
-    opacity: 1;
+    opacity: 0;
   }
   13%
   {
-    opacity: 0;
+    opacity: 1;
   }
   50%
   {
-    opacity: 1;
+    opacity: 0;
   }
   57%
   {
-    opacity: 0;
+    opacity: 1;
   }
   88%
   {
@@ -369,7 +369,7 @@
   }
   100%
   {
-    opacity: 1;
+    opacity: 0;
   }
 }
 
@@ -395,36 +395,36 @@
     /* Chrome, Safari, Opera */
     -webkit-animation-name: webkitFairyMovement;
     -webkit-animation-duration: 5s;
-    -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
     -webkit-animation-play-state: running;
     /* Standard syntax */
     animation-name: fairyMovement;
     animation-duration: 5s;
-    animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-play-state: running;
+
+  animation-timing-function: cubic-bezier(0,0,0,1);
+  -webkit-animation-timing-function: cubic-bezier(0,0,0,1);
 }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes webkitFairyMovement {
     0%   {left:0px; top:0px}
-    13%   {left:25%; top:50%}
-    50%   {left:70%; top:25%}
-    57%   {left:5%; top:50%}
-    88%   {left:70%; top:20%}
+    13%   {left:10%; top:50%}
+    50%   {left:20%; top:25%}
+    57%   {left:5%; top:60%}
+    88%   {left:30%; top:20%}
     100%   {left:0px; top:0px}
 }
 
 /* Standard syntax */
-@keyframes fairyMovement {
-    0%   {left:0px; top:0px}
-    13%   {left:25%; top:50%}
-    50%   {left:50%; top:25%}
-    57%   {left:5%; top:70%}
-    88%   {left:50%; top:20%}
+@keyframes fairyMovement {    0%   {left:0px; top:0px}
+    13%   {left:10%; top:50%}
+    50%   {left:20%; top:25%}
+    57%   {left:5%; top:60%}
+    88%   {left:30%; top:20%}
     100%   {left:0px; top:0px}
 }
 
