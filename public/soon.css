@@ -191,7 +191,7 @@ a:focus {
     font-weight: inherit;
     color: #fff;
     text-shadow: 1px;
-    border-radius: 0;
+    border-radius: 25px;
     -webkit-box-shadow: none;
     box-shadow: none;
     cursor: pointer;
