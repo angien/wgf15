@@ -221,7 +221,18 @@ a:focus {
 
 
 
-
+/*
+        Tech Comm Logo
+==================================================================================================*/
+.link-logo > a > img {
+    display: inline-block;
+    width: auto;
+    height: 75px;
+    margin: 0;
+    vertical-align: middle;
+    line-height: 1;
+    background: transparent;
+}
 
 /*
         Social links
@@ -238,8 +249,8 @@ a:focus {
 }
 
 .social-links {
-    margin-top: 50px;
     font-size: 0;
+    margin-top: 50px;
 }
 
 .social-links > a {
@@ -344,6 +355,10 @@ a:focus {
         height: 40px;
         font-size: 24px;
         line-height: 42px;
+    }
+
+    .link-logo > a > img {
+        height: 50px;
     }
 
        .links .input-group-btn,
